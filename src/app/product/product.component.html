@@ -1,0 +1,60 @@
+<div *ngIf="sale">
+	<!--<div><span>Номер продажи: </span><span>{{sale.id}}</span></div>
+	<div>
+		<label>Клиент:
+			<input [(ngModel)]="sale.client_name" placeholder="client_name"/>
+		</label>
+	</div>
+	<div>
+		<label>Название товара:
+			<input [(ngModel)]="sale.product.name"/>
+		</label>
+	</div>
+	<div>
+		<label>Количество:
+			<input [(ngModel)]="sale.amount"/>
+		</label>
+	</div>
+	<div>
+		<label>Цена:
+			<input [(ngModel)]="sale.product.price"/>
+		</label>
+	</div>-->
+	<h2>Подробно</h2>
+	<ul class="sale">
+		<li>
+			<div>
+				<span>Номер продажи</span>
+				<span>{{sale.id}}</span>
+			</div>
+		</li>
+		<li>
+			<div>
+				<span>Клиент</span>
+				<span>{{sale.client_name}}</span>
+			</div>
+		</li>
+	</ul>
+	<ul>
+		<li class="title">
+			<div>
+				<span>#</span>
+				<span>Название товара</span>
+				<span>Количество</span>
+				<span>Цена</span>
+			</div>
+		</li>
+		<div *ngFor="let sale_ of sale.sales">
+			<li>
+				<div>
+					<span>{{sale_.id}}</span>
+					<span>{{sale_.product.name}}</span>
+					<span>{{sale_.amount}}</span>
+					<span>{{sale_.product.price}}</span>
+				</div>
+			</li>
+		</div>
+	</ul>
+	<!--<div (click)="save()" class="button">Сохранить</div>
+	<div (click)="goBack()" class="button">Возврат</div>-->
+</div>

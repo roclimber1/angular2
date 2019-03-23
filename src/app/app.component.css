@@ -1,0 +1,51 @@
+body, h1, h2, a, span, div, ul, p {
+	font-family: Verdana;
+}
+h1 {
+	color: #369;
+	font-size: 250%;
+}
+ul {
+	list-style-type: none;
+}
+li span {
+	padding: 10px;
+	background: rgba(123,123,123,0.1);
+	margin: 6px;
+	display: inline-table;
+}
+li.title span {
+	background: rgba(11,11,11,0.2);
+}
+ul.sale li span {
+	background: rgba(233,233,233,0.3);
+	margin: 2px;
+}ul.sale li span:nth-child(odd) {
+	margin: 2px;
+	background: rgba(123,123,255,0.3);
+}
+.button {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 15px;
+	color: #333;
+	background: rgba(123,123,255,0.6);
+	border: none;
+	padding: 10px;
+	/*box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.8) inset;*/
+	margin: 15px 3px 15px;
+	width: fit-content;
+	cursor: pointer;
+	display: inline-table;
+}
+input {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 15px;
+	color: #333;
+	border: none;
+	padding: 10px;
+	box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4) inset;
+	margin: 5px;
+	display: inline-table;
+}

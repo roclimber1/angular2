@@ -1,0 +1,24 @@
+<h2>{{table_titles.title}}</h2>
+<ul class="sales">
+	<li class="title">
+		<div>
+			<span class="sale-line">{{table_titles.id}}</span>
+			<span>{{table_titles.client_name}}</span>
+			<span>{{table_titles.sum}}</span>
+		</div>
+	</li>
+	<li *ngFor="let sale of sales" (click)="onSelect(sale)">
+		<div>
+			<span class="sale-line">{{sale.id}}</span>
+			<span>{{sale.client_name}}</span>
+			<span>{{getSum(sale)}}</span>
+		</div>
+	</li>
+</ul>
+
+<app-product [sale]="selectedSale"></app-product>
+<div *ngIf="selectedSale">
+	<div (click)="hide()" class="button">Скрыть</div>
+</div>
+
+<!--routerLink="/product/{{sale.id}}"-->

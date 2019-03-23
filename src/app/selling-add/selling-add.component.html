@@ -1,0 +1,49 @@
+<h2>{{table_titles.title}}</h2>
+<div>
+	<label>{{table_titles.id}}
+		<input #sale_id placeholder="4"/>
+	</label>
+</div>
+<div>
+	<label>{{table_titles.client_name}}
+		<input #sale_client placeholder="Борисов Петр Яковлевич"/>
+	</label>
+</div>
+<h2>{{table_titles.tbl_name}}</h2>
+<ul class="sales">
+	<li class="title">
+		<div>
+			<span>{{table_titles.tbl_id}}</span>
+			<span>{{table_titles.product_name}}</span>
+			<span>{{table_titles.amount}}</span>
+			<span>{{table_titles.price}}</span>
+			<span>{{table_titles.price_full}}</span>
+		</div>
+	</li>
+	<div *ngIf="sellingNewService.sale.length">
+		<li *ngFor="let sale of sellingNewService.sale; index as i">
+			<div>
+				<span>{{sale.id}}</span>
+				<span>{{sale.product.name}}</span>
+				<span>{{sale.amount}}</span>
+				<span>{{sale.product.price}}</span>
+				<span>{{sale.product.price * sale.amount}}</span>
+			</div>
+		</li>
+	</div>
+	<li>
+		<div><span>{{table_titles.sum}}</span><span>{{sellingNewService.getSum()}}</span></div>
+	</li>
+</ul>
+<div class="button" (click)="onSelect()">{{table_titles.btn_select}}</div>
+<!--- && !sellingNewService.updated-->
+<div *ngIf="select">
+	<app-product-add></app-product-add>
+	<div (click)="onHide()" class="button">Скрыть</div>
+</div>
+<br>
+<div class="button" (click)="onAppend(sale_id.value, sale_client.value, sellingNewService.sale); sale_client.value=''; sale_id.value=''; onClear()">{{table_titles.btn_add}}</div>
+<div class="button" (click)="onClear()">{{table_titles.btn_clear}}</div>
+<!--  routerLink="/product-add"
+	routerLink="/selling"
+-->

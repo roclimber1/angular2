@@ -1,0 +1,14 @@
+<h2>{{title}}</h2>
+<!--<nav>
+	<div routerLink="/selling" class="button">{{btn_title}}</div>
+	<div routerLink="/selling-add" class="button">{{btn_new_title}}</div>
+</nav>
+<router-outlet></router-outlet>-->
+<div class="button" (click)="onBtnClick(true)">{{btn_title}}</div>
+<div class="button" (click)="onBtnClick(false)">{{btn_new_title}}</div>
+<div *ngIf="main_view">
+	<app-selling></app-selling>
+</div>
+<div *ngIf="!main_view">
+	<app-selling-add></app-selling-add>
+</div>

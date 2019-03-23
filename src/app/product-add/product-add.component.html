@@ -1,0 +1,32 @@
+<ul class="products">
+	<li class="title">
+		<div>
+			<span>#</span>
+			<span>Название товара</span>
+			<span>Цена</span>
+		</div>
+	</li>
+	<li *ngFor="let product of products">
+		<div>
+			<span>{{product.id}}</span>
+			<span>{{product.name}}</span>
+			<span>{{product.price}}</span>
+			<input #product_amount type="number" min="1" max="99" value="1">
+			<div class="button" (click)="select(product, product_amount.value); product_amount.value='1'">+</div>
+		</div>
+	</li>
+</ul>
+<div>Добавить новый товар</div>
+<div>
+	<label>Название товара:
+		<input #product_name/>
+	</label>
+</div>
+<div>
+	<label>Цена:
+		<input #product_price/>
+	</label>
+</div>
+<div (click)="add(product_name.value, product_price.value); product_name.value=''; product_price.value=''" class="button">Добавить товар</div>
+<!--<div (click)="goBack()" class="button">Возврат</div>-->
+<!--routerLink="/selling-add/{{product.id}}"-->
