@@ -7,7 +7,6 @@ import { SellingAddComponent } from './selling-add/selling-add.component';
 import { ProductAddComponent } from './product-add/product-add.component';
 
 const routes: Routes = [
-	//{ path: '', redirectTo: '/selling', pathMatch: 'full' },
 	{ path: 'selling', component: SellingComponent },
 	{ path: 'product/:id', component: ProductComponent },
 	{ path: 'selling-add', component: SellingAddComponent },

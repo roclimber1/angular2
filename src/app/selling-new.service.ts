@@ -9,9 +9,30 @@ import { Sale } from './sale';
 })
 export class SellingNewService {
 	sale: Sale[] = [];
+	sales: SaleLine[];
+	sale_num: number = 4;
 	updated: boolean = false;
 	counter: number = 0;
-	//sale: SaleLine[] = [];
+	main_view: boolean = true;
+
+	table_titles = {
+		title: "Создание продажи",
+		id: "Номер продажи",
+		tbl_name: "Список продаж",
+		tbl_id: "№",
+		client_name: "Клиент",
+		product_name: "Название товара",
+		amount: "Количество",
+		price: "Цена (за единицу)",
+		price_full: "Цена (за все)",
+		sum: "Сумма",
+		btn_select: "Выбрать товар",
+		btn_add: "Добавить продажу",
+		btn_clear: "Очистить",
+		btn_add_product: "Добавить товар",
+		add_new_product: "Добавить новый товар",
+		detailed: "Подробно",
+	};
 
 	addSale(product: Product, amount: number) {
 		this.counter++;
@@ -25,7 +46,6 @@ export class SellingNewService {
 
 	clearSale() {
 		this.sale = [];
-		//this.updated = true;
 		this.counter = 0;
 	}
 
@@ -42,5 +62,14 @@ export class SellingNewService {
 			sum += this.sale[i].product.price * this.sale[i].amount;
 		}
 		return sum;
+	}
+	setSales(sales: SaleLine[]) {
+		this.sales = sales;
+		console.log("setSales", this.sales, sales);
+	}
+	appendSale(sale: SaleLine) {
+		this.sales.push(sale);
+		this.main_view = true;
+		this.sale_num++;
 	}
 }

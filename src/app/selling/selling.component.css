@@ -1,0 +1,15 @@
+li.title {
+	cursor: default;
+}li.title:hover {
+	background: unset;
+}
+li {
+	cursor: pointer;
+}
+li.selected, li:hover {
+	background: rgba(123,123,123,0.1);
+	width: fit-content;
+}
+li.selected {
+	background: rgba(123,123,123,0.2);
+}

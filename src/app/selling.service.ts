@@ -15,7 +15,6 @@ const httpOptions = {
 export class SellingService {
 	private salesUrl = 'api/sales';
 	private productsUrl = 'api/products';
-	//private salesUrl = 'api/sales';
 	constructor(private http: HttpClient) {
 		console.log("getProducts", this.getProducts());
 		console.log("getSales", this.getSales());
@@ -45,7 +44,7 @@ export class SellingService {
 		return this.http.put(this.salesUrl, sale, httpOptions).pipe(catchError(this.handleError<any>('updateSale')));
 	}
 	addSale(sale: SaleLine): Observable<SaleLine> {
-		console.log("addSale");
+		console.log("addSale", sale);
 		return this.http.post<SaleLine>(this.salesUrl, sale, httpOptions).pipe(catchError(this.handleError<SaleLine>('addSale')));
 	}
 

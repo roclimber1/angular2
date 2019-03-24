@@ -1,36 +1,15 @@
 <div *ngIf="sale">
-	<!--<div><span>Номер продажи: </span><span>{{sale.id}}</span></div>
-	<div>
-		<label>Клиент:
-			<input [(ngModel)]="sale.client_name" placeholder="client_name"/>
-		</label>
-	</div>
-	<div>
-		<label>Название товара:
-			<input [(ngModel)]="sale.product.name"/>
-		</label>
-	</div>
-	<div>
-		<label>Количество:
-			<input [(ngModel)]="sale.amount"/>
-		</label>
-	</div>
-	<div>
-		<label>Цена:
-			<input [(ngModel)]="sale.product.price"/>
-		</label>
-	</div>-->
-	<h2>Подробно</h2>
+	<h2>{{sns.table_titles.detailed}}</h2>
 	<ul class="sale">
 		<li>
 			<div>
-				<span>Номер продажи</span>
+				<span>{{sns.table_titles.id}}</span>
 				<span>{{sale.id}}</span>
 			</div>
 		</li>
 		<li>
 			<div>
-				<span>Клиент</span>
+				<span>{{sns.table_titles.client_name}}</span>
 				<span>{{sale.client_name}}</span>
 			</div>
 		</li>
@@ -39,9 +18,10 @@
 		<li class="title">
 			<div>
 				<span>#</span>
-				<span>Название товара</span>
-				<span>Количество</span>
-				<span>Цена</span>
+				<span>{{sns.table_titles.product_name}}</span>
+				<span>{{sns.table_titles.amount}}</span>
+				<span>{{sns.table_titles.price}}</span>
+				<span>{{sns.table_titles.price_full}}</span>
 			</div>
 		</li>
 		<div *ngFor="let sale_ of sale.sales">
@@ -51,10 +31,9 @@
 					<span>{{sale_.product.name}}</span>
 					<span>{{sale_.amount}}</span>
 					<span>{{sale_.product.price}}</span>
+					<span>{{sale_.product.price * sale_.amount}}</span>
 				</div>
 			</li>
 		</div>
 	</ul>
-	<!--<div (click)="save()" class="button">Сохранить</div>
-	<div (click)="goBack()" class="button">Возврат</div>-->
 </div>

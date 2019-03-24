@@ -2,8 +2,9 @@
 	<li class="title">
 		<div>
 			<span>#</span>
-			<span>Название товара</span>
-			<span>Цена</span>
+			<span>{{sns.table_titles.product_name}}</span>
+			<span>{{sns.table_titles.price}}</span>
+			<span>{{sns.table_titles.amount}}</span>
 		</div>
 	</li>
 	<li *ngFor="let product of products">
@@ -16,17 +17,15 @@
 		</div>
 	</li>
 </ul>
-<div>Добавить новый товар</div>
+<div>{{sns.table_titles.add_new_product}}</div>
 <div>
-	<label>Название товара:
-		<input #product_name/>
+	<label>{{sns.table_titles.product_name}}:
+		<input #product_name placeholder="USB-кабель" value="USB-кабель"/>
 	</label>
 </div>
 <div>
-	<label>Цена:
-		<input #product_price/>
+	<label>{{sns.table_titles.price}}:
+		<input #product_price type="number" min="0" max="99999" value="150"placeholder="150">
 	</label>
 </div>
-<div (click)="add(product_name.value, product_price.value); product_name.value=''; product_price.value=''" class="button">Добавить товар</div>
-<!--<div (click)="goBack()" class="button">Возврат</div>-->
-<!--routerLink="/selling-add/{{product.id}}"-->
+<div (click)="add(product_name.value, product_price.value); product_name.value=''; product_price.value=''" class="button">{{sns.table_titles.btn_add_product}}</div>

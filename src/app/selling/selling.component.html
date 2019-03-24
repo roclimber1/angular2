@@ -1,24 +1,31 @@
-<h2>{{table_titles.title}}</h2>
-<ul class="sales">
-	<li class="title">
-		<div>
-			<span class="sale-line">{{table_titles.id}}</span>
-			<span>{{table_titles.client_name}}</span>
-			<span>{{table_titles.sum}}</span>
-		</div>
-	</li>
-	<li *ngFor="let sale of sales" (click)="onSelect(sale)">
-		<div>
-			<span class="sale-line">{{sale.id}}</span>
-			<span>{{sale.client_name}}</span>
-			<span>{{getSum(sale)}}</span>
-		</div>
-	</li>
-</ul>
+<div class="button" (click)="onBtnClick(true)">{{btn_title}}</div>
+<div class="button" (click)="onBtnClick(false)">{{btn_new_title}}</div>
 
-<app-product [sale]="selectedSale"></app-product>
-<div *ngIf="selectedSale">
-	<div (click)="hide()" class="button">Скрыть</div>
+<div *ngIf="sellingNewService.main_view">
+	<h2>{{table_titles.title}}</h2>
+	<ul class="sales">
+		<li class="title">
+			<div>
+				<span>{{table_titles.id}}</span>
+				<span>{{table_titles.client_name}}</span>
+				<span>{{table_titles.sum}}</span>
+			</div>
+		</li>
+		<li *ngFor="let sale of sellingNewService.sales" [class.selected] = "sale === selectedSale" (click)="onSelect(sale)">
+			<div>
+				<span>{{sale.id}}</span>
+				<span>{{sale.client_name}}</span>
+				<span>{{getSum(sale)}}</span>
+			</div>
+		</li>
+	</ul>
+
+	<app-product [sale]="selectedSale"></app-product>
+	<div *ngIf="selectedSale">
+		<div (click)="hide()" class="button">Скрыть</div>
+	</div>
 </div>
 
-<!--routerLink="/product/{{sale.id}}"-->
+<div *ngIf="!sellingNewService.main_view">
+	<app-selling-add></app-selling-add>
+</div>

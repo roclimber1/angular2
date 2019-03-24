@@ -7,12 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 	title = 'Test Angular 2 application';
-	btn_new_title = 'Новая продажа';
-	btn_title = 'Список продаж';
-	//btn_back_title = 'Добавить';
-	main_view = true;
-
-	onBtnClick(val: boolean): void {
-		this.main_view = val;
-	}
 }

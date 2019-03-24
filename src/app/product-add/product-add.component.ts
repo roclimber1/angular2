@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-//import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { SellingService } from '../selling.service';
@@ -14,18 +13,15 @@ import { SellingNewService } from '../selling-new.service';
 })
 export class ProductAddComponent implements OnInit {
 	products: Product[];
+	productName: string = "";
 	constructor(
-		//private route: ActivatedRoute,
 		private sellingService: SellingService,
 		private location: Location,
-		public sellingNewService: SellingNewService,
+		public sns: SellingNewService,
 	) { }
 
 	ngOnInit() {
 		this.getProducts();
-	}
-	goBack(): void {
-		//this.location.back();
 	}
 	add(name: string, price: number): void {
 		name = name.trim();
@@ -34,13 +30,10 @@ export class ProductAddComponent implements OnInit {
 			.subscribe(product => { this.products.push(product); });
 	}
 	getProducts(): void {
-		//console.log("ProductAddComponent getProducts");
 		this.sellingService.getProducts()
       		.subscribe(products => this.products = products);
 	}
 	select(product: Product, amount: number): void {
-		//console.log("select",product);
-		//this.sellingService.addProductList(product);
-		this.sellingNewService.addSale(product, amount);
+		this.sns.addSale(product, amount);
 	}
 }

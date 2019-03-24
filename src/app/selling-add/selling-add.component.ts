@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { Product } from '../product';
@@ -13,57 +12,33 @@ import { SellingNewService } from '../selling-new.service';
 	styleUrls: ['./selling-add.component.css', '../app.component.css']
 })
 export class SellingAddComponent implements OnInit {
-	//products_list: Product[];
 	select: boolean = false;
-	//counter: number = 0;
-	table_titles = {
-		title: "Создание продажи",
-		id: "Номер продажи",
-		tbl_name: "Список продаж",
-		tbl_id: "№",
-		client_name: "Клиент",
-		product_name: "Название товара",
-		amount: "Количество",
-		price: "Цена (за единицу)",
-		price_full: "Цена (за все)",
-		sum: "Сумма",
-		btn_select: "Выбрать товар",
-		btn_add: "Добавить продажу",
-		btn_clear: "Очистить",
-	};
 	constructor(
-		private route: ActivatedRoute,
 		private sellingService: SellingService,
 		private location: Location,
-		public sellingNewService: SellingNewService,
+		public sns: SellingNewService,
 	) {
-		//this.counter = 0;
-		//this.select = false;
 	}
 
 	ngOnInit() {
-		//this.getProducts();
 	}
-	/*getProducts(): void {
-		console.log("getProducts");
-		this.sellingService.getProductsList()
-			.subscribe(products_list => this.products_list = products_list);
-	}*/
 	onSelect(): void {
 		this.select = true;
-		this.sellingNewService.clear();
+		this.sns.clear();
 	}
 	onHide(): void {
 		this.select = false;
 	}
 	onClear(): void {
-		this.sellingNewService.clearSale();
+		this.sns.clearSale();
 	}
 	onAppend(id: number, client_name: string, sale: Sale[]): void {
+		console.log("onAppend",id,client_name,sale);
 		this.sellingService.addSale({
 			id: id,
 			sales: sale,
 			client_name: client_name,
-		});
+		})
+		.subscribe(sale => { this.sns.appendSale(sale); });
 	}
 }
