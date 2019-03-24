@@ -4,11 +4,11 @@ This application provides review and creation of a list of orders.
 
 Main view:
 
-![Main view](https://yadi.sk/i/CqQZr_31ZpGK2Q)
+![Main view](https://photos.app.goo.gl/sGUKVgdxLqceUkof9)
 
 Main view - Show details:
 
-![Show details](https://yadi.sk/i/YNgJMAc-mrXYVg)
+![Show details](https://photos.app.goo.gl/Qw8zDBKarFMqkHRo6)
 
 New sale view:
 
