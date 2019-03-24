@@ -1,4 +1,42 @@
-# MyApp
+# Test Angular 2 application (Ordermaker)
+
+This application provides review and creation of a list of orders.
+
+Main view:
+
+![Main view]
+(https://yadi.sk/i/CqQZr_31ZpGK2Q)
+
+Main view - Show details:
+
+![Show details]
+(https://yadi.sk/i/YNgJMAc-mrXYVg)
+
+New sale view:
+
+![New sale view]
+(https://yadi.sk/i/IKpSdcGrl40-RA)
+
+New sale view - Select product (and append to sale list):
+
+![Select product]
+(https://yadi.sk/i/G4r19gxctCh0WA)
+
+New sale view:
+Append new product: | New product added:
+--------------------|-------------------
+![Select product] | ![New product added]
+(https://yadi.sk/i/-Sk098I9ftjOQg) | (https://yadi.sk/i/7rK_GrreXM7Lag)
+
+New sale view - Append new sale (data for new sale ready):
+
+![Append new sale]
+(https://yadi.sk/i/WdcywRMG5YX2CQ)
+
+Main view - New sale added:
+
+![New sale added]
+(https://yadi.sk/i/WJY-e49Y1ceugA)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
