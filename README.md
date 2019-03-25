@@ -3,8 +3,9 @@ Release [here](https://github.com/roclimber1/angulartest).
 
 This application provides review and creation of a list of orders.
 
-### Main view:
-![Main view](https://github.com/roclimber1/angular2/blob/master/dist/img/main_view.png)
+### Main view: |
+-------------- |
+![Main view](https://github.com/roclimber1/angular2/blob/master/dist/img/main_view.png) |
 
 ### Main view - Show details:
 ![Show details](https://github.com/roclimber1/angular2/blob/master/dist/img/main_view_details.png)
