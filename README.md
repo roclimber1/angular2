@@ -5,39 +5,32 @@ This application provides review and creation of a list of orders.
 
 Main view:
 
-![Main view]
-(https://yadi.sk/i/CqQZr_31ZpGK2Q)
+![Main view](https://github.com/roclimber1/angular2/blob/master/dist/img/main_view.png)
 
 Main view - Show details:
 
-![Show details]
-(https://yadi.sk/i/YNgJMAc-mrXYVg)
+![Show details](https://github.com/roclimber1/angular2/blob/master/dist/img/main_view_details.png)
 
 New sale view:
 
-![New sale view]
-(https://yadi.sk/i/IKpSdcGrl40-RA)
+![New sale view](https://github.com/roclimber1/angular2/blob/master/dist/img/new_sale_view.png)
 
 New sale view - Select product (and append to sale list):
 
-![Select product]
-(https://yadi.sk/i/G4r19gxctCh0WA)
+![Select product](https://github.com/roclimber1/angular2/blob/master/dist/img/new_sale_view_sel_product.png)
 
 New sale view:
 Append new product: | New product added:
 --------------------|-------------------
-![Select product] | ![New product added]
-(https://yadi.sk/i/-Sk098I9ftjOQg) | (https://yadi.sk/i/7rK_GrreXM7Lag)
+![Append new product](https://github.com/roclimber1/angular2/blob/master/dist/img/new_sale_view_add_product.png) | ![New product added](https://github.com/roclimber1/angular2/blob/master/dist/img/new_sale_view_add_product_2.png)
 
 New sale view - Append new sale (data for new sale ready):
 
-![Append new sale]
-(https://yadi.sk/i/WdcywRMG5YX2CQ)
+![Append new sale](https://github.com/roclimber1/angular2/blob/master/dist/img/new_sale_view_add_sale.png)
 
 Main view - New sale added:
 
-![New sale added]
-(https://yadi.sk/i/WJY-e49Y1ceugA)
+![New sale added](https://github.com/roclimber1/angular2/blob/master/dist/img/main_view_new_sale_appened.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
