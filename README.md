@@ -3,33 +3,29 @@ Release [here](https://github.com/roclimber1/angulartest).
 
 This application provides review and creation of a list of orders.
 
-Main view:
-
+### Main view:
 ![Main view](https://github.com/roclimber1/angular2/blob/master/dist/img/main_view.png)
 
-Main view - Show details:
-
+### Main view - Show details:
 ![Show details](https://github.com/roclimber1/angular2/blob/master/dist/img/main_view_details.png)
 
-New sale view:
-
+### New sale view:
 ![New sale view](https://github.com/roclimber1/angular2/blob/master/dist/img/new_sale_view.png)
 
-New sale view - Select product (and append to sale list):
-
+### New sale view - Select product (and append to sale list):
 ![Select product](https://github.com/roclimber1/angular2/blob/master/dist/img/new_sale_view_sel_product.png)
 
-New sale view:
-Append new product: | New product added:
---------------------|-------------------
-![Append new product](https://github.com/roclimber1/angular2/blob/master/dist/img/new_sale_view_add_product.png) | ![New product added](https://github.com/roclimber1/angular2/blob/master/dist/img/new_sale_view_add_product_2.png)
+## New sale view:
+### Append new product: 
+![Append new product](https://github.com/roclimber1/angular2/blob/master/dist/img/new_sale_view_add_product.png)
 
-New sale view - Append new sale (data for new sale ready):
+### New product added:
+![New product added](https://github.com/roclimber1/angular2/blob/master/dist/img/new_sale_view_add_product_2.png)
 
+### New sale view - Append new sale (data for new sale ready):
 ![Append new sale](https://github.com/roclimber1/angular2/blob/master/dist/img/new_sale_view_add_sale.png)
 
-Main view - New sale added:
-
+### Main view - New sale added:
 ![New sale added](https://github.com/roclimber1/angular2/blob/master/dist/img/main_view_new_sale_appened.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
