@@ -30,10 +30,6 @@ This application provides review and creation of a list of orders.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
-> ### NOTE
-
-> In order to work with the project and to make build the project you need append directory 'nods_modules' to root directory.
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
