@@ -3,29 +3,29 @@
 This application provides review and creation of a list of orders.
 
 ## 1. Main view:
-![Main view](https://github.com/roclimber1/angular2/blob/master/dist/img/main_view.png)
+![Main view](https://github.com/roclimber1/angular2/blob/master/src/img/main_view.png)
 
 ## 2. Main view - Show details:
-![Show details](https://github.com/roclimber1/angular2/blob/master/dist/img/main_view_details.png)
+![Show details](https://github.com/roclimber1/angular2/blob/master/src/img/main_view_details.png)
 
 ## 3. New sale view:
-![New sale view](https://github.com/roclimber1/angular2/blob/master/dist/img/new_sale_view.png)
+![New sale view](https://github.com/roclimber1/angular2/blob/master/src/img/new_sale_view.png)
 
 ## 4. New sale view - Select product (and append to sale list):
-![Select product](https://github.com/roclimber1/angular2/blob/master/dist/img/new_sale_view_sel_product.png)
+![Select product](https://github.com/roclimber1/angular2/blob/master/src/img/new_sale_view_sel_product.png)
 
 ## 5. New sale view:
 ### 5.1. Append new product: 
-![Append new product](https://github.com/roclimber1/angular2/blob/master/dist/img/new_sale_view_add_product.png)
+![Append new product](https://github.com/roclimber1/angular2/blob/master/src/img/new_sale_view_add_product.png)
 
 ### 5.2. New product added:
-![New product added](https://github.com/roclimber1/angular2/blob/master/dist/img/new_sale_view_add_product_2.png)
+![New product added](https://github.com/roclimber1/angular2/blob/master/src/img/new_sale_view_add_product_2.png)
 
 ## 6. New sale view - Append new sale (data for new sale ready):
-![Append new sale](https://github.com/roclimber1/angular2/blob/master/dist/img/new_sale_view_add_sale.png)
+![Append new sale](https://github.com/roclimber1/angular2/blob/master/src/img/new_sale_view_add_sale.png)
 
 ## 7. Main view - New sale added:
-![New sale added](https://github.com/roclimber1/angular2/blob/master/dist/img/main_view_new_sale_appened.png)
+![New sale added](https://github.com/roclimber1/angular2/blob/master/src/img/main_view_new_sale_appened.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
