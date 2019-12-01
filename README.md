@@ -1,5 +1,4 @@
 # Test Angular 2 application (Ordermaker) - Sources
-Release [here](https://github.com/roclimber1/angulartest).
 
 This application provides review and creation of a list of orders.
 
